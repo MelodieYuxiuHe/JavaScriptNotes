@@ -38,6 +38,8 @@ One statement needs to run after the previous command finish
 
 ### Add Javascript to HTML
 
+Content (HTML) - Style (CSS) - Interactivity (Javascript)
+
 ![Screen Shot 2021-07-02 at 1.47.04 PM](/Users/melodie/Library/Application Support/typora-user-images/Screen Shot 2021-07-02 at 1.47.04 PM.png)
 
 2 Ways to create a JS script:
@@ -49,18 +51,52 @@ Method1:
 2)  Link/connect that to a HTML file using:
 
 ```javascript
-<script src="js/test.js"></script>
-//js/test.js is the path of the target javascript script
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+    <link href="css/style.css" rel="stylesheet">
+      //the line below
+      <script src = "js/test.js" ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Hello, JavaScript!</h1>
+    </main>
+  </body>
+</html>
 ```
 
-![Screen Shot 2021-07-02 at 1.56.51 PM](/Users/melodie/Library/Application Support/typora-user-images/Screen Shot 2021-07-02 at 1.56.51 PM.png)
+```javascript
+<script src="js/test.js"></script>
+//js/test.js is the path of the target javascript script
+```
 
 Method2:
 
 Add the 'alert' commend to the html script
 
-![Screen Shot 2021-07-02 at 2.01.21 PM](/Users/melodie/Library/Application Support/typora-user-images/Screen Shot 2021-07-02 at 2.01.21 PM.png)
+```javascript
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+    <link href="css/style.css" rel="stylesheet">
+      <script src = "js/test.js" ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Hello, JavaScript!</h1>
+//the line below, check check 
+<script>
+        alert("Check check from inside html");
+</script>
+    </main>
+  </body>
+</html>
+```
 
 It will first run the test.js script, then go to the alert pop window "check check etc"
 
